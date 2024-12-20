@@ -9,16 +9,7 @@ Original file is located at
 ##Install libraries
 """
 
-# Install the necessary packages
-!pip install --upgrade transformers
-!pip install transformers
-!pip install datasets
-!pip install torch
-!pip install sentencepiece # Needed for some tokenizers
-!pip install numpy pandas
-!pip install streamlit
-!pip install localtunnel
-!nvidia-smi
+# libraries in requirements.txt
 
 """##Import Libraries"""
 
@@ -300,5 +291,3 @@ if user_input:
 # Clear Chat Button
 if st.button("Clear Chat", key="clear"):
     st.experimental_rerun()
-
-!streamlit run chatbot_app.py & npx localtunnel --port 8501
